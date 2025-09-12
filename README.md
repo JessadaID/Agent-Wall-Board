@@ -1,11 +1,10 @@
 # Phase 1 Enhanced: Agent Wallboard API with Professional Structure
 
-| Phase | Focus | Duration | Complexity | Key Learning |
-| ----- | ----- | -------- | ---------- | ------------ |
-
-|Phase 1| Basic API + CRUD| 4 hrs| ⭐ Beginner| Express.js, RESTful API, In-memory storage|
-|Phase 2| Database + Simple WebSocket| 4 hrs| ⭐⭐ Intermediate| MongoDB basics, Real-time updates|
-|Phase 3| Authentication + Production |4 hrs |⭐⭐⭐ Advanced| JWT basics, Deployment ready|
+| Phase   | Focus                       | Duration | Complexity        | Key Learning                               |
+| ------- | --------------------------- | -------- | ----------------- | ------------------------------------------ |
+| Phase 1 | Basic API + CRUD            | 4 hrs    | ⭐ Beginner       | Express.js, RESTful API, In-memory storage |
+| Phase 2 | Database + Simple WebSocket | 4 hrs    | ⭐⭐ Intermediate | MongoDB basics, Real-time updates          |
+| Phase 3 | Authentication + Production | 4 hrs    | ⭐⭐⭐ Advanced   | JWT basics, Deployment ready               |
 
 ### Complexity Progression:
 
