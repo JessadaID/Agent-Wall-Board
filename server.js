@@ -29,7 +29,10 @@ app.use(helmet());
 
 // CORS configuration
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  origin: [
+    process.env.FRONTEND_URL || 'http://localhost:3000',
+    'http://localhost:5500' // Allow VSCode Live Server for testing
+  ],
   credentials: true
 }));
 

@@ -1,6 +1,4 @@
 // websocket/socketServer.js - WebSocket server management
-//const socketIo = require('socket.io');
-
 const socketIo = require('socket.io');
 const AgentMongo = require('../models/AgentMongo');
 
@@ -13,7 +11,10 @@ class SocketServer {
   initialize(server) {
     this.io = socketIo(server, {
       cors: {
-        origin: process.env.FRONTEND_URL || "http://localhost:3000",
+        origin: [
+          process.env.FRONTEND_URL || "http://localhost:3000",
+          'http://localhost:5500' // Allow VSCode Live Server for testing
+        ],
         methods: ["GET", "POST"],
         credentials: true
       },

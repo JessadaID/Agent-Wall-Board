@@ -82,7 +82,8 @@
         </div>
     </div>
 
-    <script src="./websocket/socketServer.js"></script>
+    <!-- 1. Load the correct Socket.IO client library from a CDN -->
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
     <script>
         let socket = null;
         
@@ -104,7 +105,7 @@
                 socket.disconnect();
             }
             
-            socket = io('http://localhost:3000');
+            socket = io('http://localhost:3001');
             
             socket.on('connect', () => {
                 log('✅ Connected to WebSocket server');
