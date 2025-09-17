@@ -9,7 +9,12 @@
     "test": "echo 'Run Postman tests - see README.md'",
     "docs": "echo 'API Documentation: http://localhost:3001/api/docs'"
   },
-  "keywords": ["agent", "wallboard", "api", "callcenter"],
+  "keywords": [
+    "agent",
+    "wallboard",
+    "api",
+    "callcenter"
+  ],
   "author": "JessadaID",
   "license": "ISC",
   "dependencies": {
@@ -18,7 +23,9 @@
     "express": "^5.1.0",
     "helmet": "^8.1.0",
     "joi": "^18.0.1",
-    "morgan": "^1.10.1"
+    "mongoose": "^8.18.1",
+    "morgan": "^1.10.1",
+    "socket.io": "^4.8.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
