@@ -17,4 +17,7 @@ router.get('/:agentCode', messageController.getMessagesForAgent);
 // PATCH /api/messages/:id/read - Mark message as read
 router.patch('/:id/read', messageController.markMessageAsRead);
 
+// GET /api/messages/markAllAsRead/:id - Mark all messages as read 
+router.get('/markAllAsRead/:id',messageController.markAllAsRead);
+
 module.exports = router;
