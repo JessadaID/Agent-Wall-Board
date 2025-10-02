@@ -1,37 +1,26 @@
-# Phase 1 Enhanced: Agent Wallboard API with Professional Structure
+# Agent Wallboard API - Enhanced Phase 1
 
-| Phase   | Focus                       | Duration | Complexity        | Key Learning                               |
-| ------- | --------------------------- | -------- | ----------------- | ------------------------------------------ |
-| Phase 1 | Basic API + CRUD            | 4 hrs    | ⭐ Beginner       | Express.js, RESTful API, In-memory storage |
-| Phase 2 | Database + Simple WebSocket | 4 hrs    | ⭐⭐ Intermediate | MongoDB basics, Real-time updates          |
-| Phase 3 | Authentication + Production | 4 hrs    | ⭐⭐⭐ Advanced   | JWT basics, Deployment ready               |
+> Professional Node.js API สำหรับจัดการ Call Center Agents แบบ Real-time
 
-### Complexity Progression:
+## ✨ Features Enhanced
+- 🏗️ Professional MVC project structure  
+- ✅ Input validation with Joi
+- 🛡️ Security middleware (Helmet)
+- 📝 Request logging และ performance monitoring
+- ⚠️ Global error handling
+- 📊 Consistent API response format
 
-```
-Phase 1: Single file (server.js) ← Start here
-   ↓
-Phase 2: server.js + MongoDB ← Add persistence
-   ↓
-Phase 3: server.js + Auth + Deploy ← Production ready
-```
+## 🚀 Quick Start
 
-### Phase 1 ในระบบ Agent Wallboard ทั้งหมด
+```bash
+# 1. Clone และ install dependencies
+npm install
 
-    ```
-        ┌──────────────────────────────────┐
-        │   Frontend (Desktop Apps)        │  ← Phase 4: Electron.js
-        │   • Agent App • Supervisor App   │
-        └───────────────┬──────────────────┘
-                        │ HTTP/REST + WebSocket
-                        ▼
-        ┌──────────────────────────────────┐
-        │   Backend API (Phase 1 ตรงนี้!)    │  ← Node.js + Express
-        │   • REST APIs • Validation       │
-        └───────────────┬──────────────────┘
-                        │ Database Connections
-                        ▼
-        ┌──────────────────────────────────┐
-        │   Database (Phase 2–3)           │  ← MSSQL + MongoDB
-        └──────────────────────────────────┘
-    ```
+# 2. สร้าง environment file
+cp .env.example .env
+
+# 3. Start development server
+npm run dev
+
+# 4. Test API
+curl http://localhost:3001/api/health
